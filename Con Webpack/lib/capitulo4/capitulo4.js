@@ -1,0 +1,58 @@
+"use strict";
+
+var _navbar = require("../util/navbar");
+
+require("../css/style.scss");
+
+require("bootstrap");
+
+var nav = (0, _navbar.creatNav)();
+document.getElementById("nav-capitulo4").appendChild(nav);
+var article = document.createElement("article");
+var container = document.createElement("div");
+container.classList = "container";
+article.appendChild(container);
+var row = document.createElement("div");
+row.classList = "row";
+container.appendChild(row);
+var grid = document.createElement("div");
+grid.classList = "col-lg-8 col-md-10 mx-auto";
+row.appendChild(grid);
+var title1 = document.createElement("h2");
+title1.classList = "section-heading";
+title1.innerText = "Parte 1";
+grid.appendChild(title1);
+var parrafo1 = document.createElement("p");
+parrafo1.innerText = "Unas horas antes de la fiesta";
+grid.appendChild(parrafo1);
+var parrafo2 = document.createElement("p");
+parrafo2.innerText = "Frankie, ay\xFAdame organizar a todos estos ni\xF1os, \xBFcu\xE1ntos hacen falta? Frankie me dijo que faltaban ya pocos. Recib\xED una llamada de parte de la empresa que nos iba a brindar la comida y la banda diciendo que no pod\xEDan pasar porque un cami\xF3n volc\xF3 y no hab\xEDa paso. Iban a llegar directo a la casa, pero un par de horas tarde. Bueno, mejor tarde que nunca pens\xE9.";
+grid.appendChild(parrafo2);
+var parrafo3 = document.createElement("p");
+parrafo3.innerText = "Al cabo de un rato, empez\xF3 a llenarse de personas el centro comercial. \xBFHabr\xEDa alguna actividad? Para salir de dudas, fui a preguntar y me dijeron que un cantante famoso llegar\xEDa a dar un peque\xF1o concierto. \xBFQui\xE9n ser\xE1 ese \u201Ccantante famoso\u201D? De pronto recib\xED la llamada de Frankie. Me dijo que ya estaban todos los invitados y el bus estaba esperando y de inmediato le escrib\xED a Carlos, pero luego me dijo que hab\xEDa un peque\xF1o (en realidad gigante) problema; el concierto va a ser en el parqueo y lo han cerrado. No podemos salir hasta que termine. ";
+grid.appendChild(parrafo3);
+var img1 = document.createElement("a");
+img1.href = "../img/preocupacion.gif";
+img1.innerHTML = "<img class=\"img-fluid centrar\" src=\"img/preocupacion.gif\" alt=\"\">";
+grid.appendChild(img1);
+var title2 = document.createElement("h2");
+title2.classList = "section-heading";
+title2.innerText = "Parte 2";
+grid.appendChild(title2);
+var parrafo4 = document.createElement("p");
+parrafo4.innerText = "Me puse muy nerviosa. Estuve dando vueltas por todo el centro comercial hablando con los encargados, pero no los pude convencer. Tendr\xEDamos que esperar. De pronto me record\xE9 de que no le hab\xEDa avisado a Carlos sobre la situaci\xF3n, pero, a llamarlo iba cuando mi tel\xE9fono se qued\xF3 sin carga. Fui corriendo con Frankie y le pregunt\xE9: \xBFy ahora que hacemos?, a lo que me respondi\xF3 que disfrutar el concierto. Bueno\u2026 espero que los invitados lo disfruten tambi\xE9n.";
+grid.appendChild(parrafo4);
+var parrafo5 = document.createElement("p");
+parrafo5.innerText = "Durante el concierto Frankie not\xF3 que lo estaban llamando\u2026 \xA1Era Carlos!\xA1se me olvid\xF3 decirle a Frankie que le avisara! \xC9l le cont\xF3 todo y, claro, Carlos se enoj\xF3, pero que pod\xEDamos hacer nosotros. Lo lamento mucho por Antonio. Lo bueno es que llegaremos, aunque sea tarde. \xA1Oh! y llegaremos junto con la comida y la banda, como lo pidi\xF3 Carlos. Todo estaba planeado.";
+grid.appendChild(parrafo5);
+var img2 = document.createElement("a");
+img2.href = "../img/concierto.gif";
+img2.innerHTML = "<img class=\"img-fluid centrar\" src=\"img/concierto.gif\" alt=\"\">";
+grid.appendChild(img2);
+var linea1 = document.createElement("hr");
+grid.appendChild(linea1);
+var btn = document.createElement("div");
+btn.classList = "clearfix";
+btn.innerHTML = "<a class=\"btn btn-primary float-right\" href=\"index.html\">Home &rarr;</a>";
+grid.appendChild(btn);
+document.getElementById("capitulo4-text").appendChild(article);

@@ -1,0 +1,55 @@
+"use strict";
+
+var _navbar = require("../util/navbar");
+
+require("../css/style.scss");
+
+require("bootstrap");
+
+var nav = (0, _navbar.creatNav)();
+document.getElementById("nav-capitulo3").appendChild(nav);
+var article = document.createElement("article");
+var container = document.createElement("div");
+container.classList = "container";
+article.appendChild(container);
+var row = document.createElement("div");
+row.classList = "row";
+container.appendChild(row);
+var grid = document.createElement("div");
+grid.classList = "col-lg-8 col-md-10 mx-auto";
+row.appendChild(grid);
+var title1 = document.createElement("h2");
+title1.classList = "section-heading";
+title1.innerText = "Parte 1";
+grid.appendChild(title1);
+var parrafo1 = document.createElement("p");
+parrafo1.innerText = "El d\xEDa previo al cumplea\xF1os de Antonio";
+grid.appendChild(parrafo1);
+var parrafo2 = document.createElement("p");
+parrafo2.innerText = "Luc\xEDa, necesito tu ayuda. Necesito que te re\xFAnas con todos los invitados en el centro comercial. All\xED tambi\xE9n se reunir\xE1 la banda y la carreta de shucos. Cuando todos est\xE9n listos, nos avisas por WhatsApp y agarran camino hacia la casa. Frankie, mi hermano, te estar\xE1 apoyando y cualquier cosa me escribes. Ya est\xE1 todo organizado para el gran d\xEDa; espero que Antonio se la pase muy bien. Le demostrar\xE9 a Carmen, mi esposa, que s\xED soy capaz de hacer buenas fiestas sorpresa.";
+grid.appendChild(parrafo2);
+var img1 = document.createElement("a");
+img1.href = "../img/orgullo.gif";
+img1.innerHTML = "<img class=\"img-fluid centrar\" src=\"img/orgullo.gif\" alt=\"\">";
+grid.appendChild(img1);
+var title2 = document.createElement("h2");
+title2.classList = "section-heading";
+title2.innerText = "Parte 2";
+grid.appendChild(title2);
+var parrafo4 = document.createElement("p");
+parrafo4.innerText = "Al d\xEDa siguiente en la tarde";
+grid.appendChild(parrafo4);
+var parrafo5 = document.createElement("p");
+parrafo5.innerText = "Ya recib\xED el Whatsappaso de Luc\xEDa, vamos ahorita. Salimos de la casa y yo, al igual que Antonio, estaba emocionado por la fiesta, \xA1quiero ver su reacci\xF3n! (al igual que la de Carmen claro). Llegamos a la casa de Luc\xEDa y cuando entramos, yo ya sab\xEDa que no iba a haber nadie dentro. Pero me empec\xE9 a poner nervioso porque no aparec\xEDa nadie y supuestamente ya tendr\xEDan que haber aparecido todos. Le ped\xED a Carmen que llamara a su hermana, pero ella no contest\xF3. Luego recib\xED una gran maltratada por parte de Carmen y Antonio estaba llorando. \xBF\xA1Donde est\xE1n todos!? Me record\xE9 que Frankie andaba con ellos y lo llam\xE9. Llam\xE9 y llam\xE9 y como a la d\xE9cima llamada contest\xF3\u2026 No pod\xEDa creer lo que hab\xEDa pasado. Y ahora, \xBFc\xF3mo se lo comunic\xF3 a Antonio?";
+grid.appendChild(parrafo5);
+var img2 = document.createElement("a");
+img2.href = "../img/preocupado.gif";
+img2.innerHTML = "<img class=\"img-fluid centrar\" src=\"img/preocupado.gif\" alt=\"\">";
+grid.appendChild(img2);
+var linea1 = document.createElement("hr");
+grid.appendChild(linea1);
+var btn = document.createElement("div");
+btn.classList = "clearfix";
+btn.innerHTML = "<a class=\"btn btn-primary float-right\" href=\"capitulo4.html\">Capitulo 4 &rarr;</a>";
+grid.appendChild(btn);
+document.getElementById("capitulo3-text").appendChild(article);
